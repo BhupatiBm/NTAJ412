@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script language="JavaScript" src="js/validation.js"></script>
+</head>
+<body style="text-align: center; background-color:#ffff99  ">
+<h1 style="color:green;height: 33px;text-align:center  ">Marriage Eligibility Checking Portal</h1>
+<h1 style="color:green;height: 34px;text-align:center">Let's check your luck !!</h1><br>
+<form action="marriageurl" method="post"  onsubmit="return validate(this)">
+Person name:<input type="text" name="name"> <span id="nameErr"></span> <br>
+Age:        <input type="password" name="age"><span id="ageErr"></span><br>
+Gender:<input type="radio" name="gender" value="m">Male &nbsp;&nbsp;
+	   <input type="radio" name="gender" value="f">Female<br>
+Job status:   <input type="radio" name="job" value="emp">Employed &nbsp;&nbsp;
+			  <input type="radio" name="job" value="unemp">Unemployed<br>
+Salary:<input type="text" name="salary"><br>
+ <input type="hidden" name="pflag" value="no"/><br>
+<input type="submit" value="Check Eligibility">
+
+</form>
+</body>
+</html>
+

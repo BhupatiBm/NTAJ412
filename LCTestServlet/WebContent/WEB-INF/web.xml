@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+
+	<servlet>
+		<servlet-name>LcTest</servlet-name>
+		<servlet-class>com.nt.servlet.LcTestServlet</servlet-class>
+		<init-param>
+		<param-name>bhupati</param-name>
+		<param-value>bbmp@gmail</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LcTest</servlet-name>
+		<url-pattern>/lct</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>excel</servlet-name>
+		<servlet-class>com.nt.servlet.ExcelServlet</servlet-class>
+		<load-on-startup>8</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>excel</servlet-name>
+		<url-pattern>/excelurl</url-pattern>
+	</servlet-mapping>	
+
+	<servlet>
+		<servlet-name>plain</servlet-name>
+		<servlet-class>com.nt.servlet.PlainServlet</servlet-class>
+		<load-on-startup>5</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>plain</servlet-name>
+		<url-pattern>/plainurl</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>word</servlet-name>
+		<servlet-class>com.nt.servlet.WordServlet</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>word</servlet-name>
+		<url-pattern>/wordurl</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>xml</servlet-name>
+		<servlet-class>com.nt.servlet.XmlServlet</servlet-class>
+		<load-on-startup>-1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>xml</servlet-name>
+		<url-pattern>/xmlurl</url-pattern>
+	</servlet-mapping>
+</web-app>
